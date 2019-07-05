@@ -21,6 +21,7 @@ class Player {
 
     private Orientation getNewOrientation(final String move, final Orientation orientation) {
         int pre = orientation.getGrades();
+        // TODO: maybe extract L and R to Commands enum
         if ("R".equalsIgnoreCase(move)) {
             return Orientation.fromGrades(pre + 90);
         } else if ("L".equalsIgnoreCase(move)) {

@@ -6,8 +6,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class GameBoardTest {
 
     @Test
-    public void whenGameBoardStartsPlayerIsInitializedAtBottomLeftCorner() {
-        assertThat(new GameBoard().playerMoves(new String[]{""})).isNotNull();
+    public void playerShouldLookNorthByDefault() {
+        assertThat(new GameBoard().playerMoves(new String[]{})).isEqualTo("0 0 N");
     }
 
     @Test
@@ -23,11 +23,6 @@ public class GameBoardTest {
     @Test
     public void playerShouldLookWest() {
         assertThat(new GameBoard().playerMoves(new String[]{"R", "R", "R"})).isEqualTo("0 0 W");
-    }
-
-    @Test
-    public void playerShouldLookNorthByDefault() {
-        assertThat(new GameBoard().playerMoves(new String[]{})).isEqualTo("0 0 N");
     }
 
     @Test

@@ -1,0 +1,2 @@
+java -jar com.vonage-1.0-SNAPSHOT.jar M M M M M M M M
+java -jar com.vonage-1.0-SNAPSHOT.jar R M M M L M M
